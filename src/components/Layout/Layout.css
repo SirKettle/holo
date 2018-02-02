@@ -1,0 +1,49 @@
+
+/* holo-holo colors */
+/*
+#38bada; /* blue */
+/*
+#ffec14; /* yellow */
+/*
+#d93d9d; /* pink */
+/*
+#e52f2f; /* red */
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 auto;
+  background: #38bada; /* blue */
+  color: white;
+}
+
+.content {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  padding: 1rem;
+
+  @media (min-width: 600px) {
+    padding: 2rem;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  padding: 1rem;
+  background: #d93d9d; /* pink */
+  color: white;
+
+  @media (min-width: 600px) {
+    padding: 2rem;
+  }
+}
