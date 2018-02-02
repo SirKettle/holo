@@ -1,11 +1,11 @@
 {
-  "name": "mood-for-a-movie",
+  "name": "holo",
   "version": "0.0.1",
-  "description": "A blog using React + Redux + Router5",
+  "description": "Website - Personal petcare for Gedling, Carlton and surrounding areas.",
   "main": "index.jsx",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SirKettle/mood-for-movies"
+    "url": "https://github.com/SirKettle/holo"
   },
   "author": "SirKettle",
   "license": "MIT",
