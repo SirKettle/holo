@@ -4,6 +4,7 @@ import { routeNodeSelector } from 'redux-router5';
 import Layout from '../Layout/Layout';
 import Content from '../Content/Content';
 import * as site from '../../constants/site';
+import imageClaireMountain from '../../assets/images/claire_mountain.jpg';
 
 const markdown = `
 # ${site.name}
@@ -13,7 +14,9 @@ const markdown = `
 
 function Home() {
   return (
-    <Layout>
+    <Layout
+      hero={imageClaireMountain}
+    >
       <Content markdown={markdown} />
     </Layout>
   );

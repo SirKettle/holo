@@ -5,6 +5,8 @@ import Content from '../Content/Content';
 import typography from '../../css/typography.css';
 import styles from './Layout.css';
 import * as site from '../../constants/site';
+import logoText from '../../assets/images/logo-text_1000x352.png';
+import logoAnimals from '../../assets/images/logo-animals_924x824.png';
 
 const footerRenderers = {
   heading: args => (
@@ -25,10 +27,28 @@ const footerMarkdown = `
 
 const Layout = ({
   className,
-  children
+  children,
+  hero
 }) => (
   <div className={classnames(styles.layout, className)}>
     <Navigation className={styles.nav} />
+    <div className={styles.header}>
+      <img
+        className={styles.logoText}
+        src={logoText}
+        alt="holo-holo"
+      />
+      <img
+        className={styles.logoAnimals}
+        src={logoAnimals}
+        alt="holo-holo"
+      />
+    </div>
+    {
+      hero
+      ? <img className={styles.hero} src={hero} alt="holo-holo hero" />
+      : null
+    }
     <div className={styles.content}>
       { children }
     </div>
@@ -40,6 +60,7 @@ const Layout = ({
 
 Layout.propTypes = {
   className: PropTypes.string,
+  hero: PropTypes.string,
   children: PropTypes.node.isRequired
 };
 

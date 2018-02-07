@@ -3,11 +3,14 @@ import { connect } from 'react-redux';
 import classnames from 'classnames';
 import { actions as routerActions } from 'redux-router5';
 // import { trackClick } from '../../domains/ui/uiActions';
+import * as routerSelectors from '../../domains/router/routerSelectors';
 import styles from './Navigation.css';
 import Button from '../../components/Button/Button';
 import * as site from '../../constants/site';
 
-const mapStateToProps = () => ({});
+const mapStateToProps = state => ({
+  activeRoute: routerSelectors.activeRouteSelector(state)
+});
 
 const mapDispatchToProps = dispatch => ({
   // track: (key, data) => { trackClick(dispatch, key, data); },
@@ -21,16 +24,17 @@ const headerLinks = [
 
 export const Navigation = ({
   className,
+  activeRoute,
   // track,
   navigateTo
 }) => {
   return (
-    <div className={classnames(className, styles.header)}>
+    <div className={classnames(className, styles.nav)}>
       <div className={styles.menu}>
         {
           headerLinks
             .map((headerLink) => {
-              const isSelected = true;
+              const isSelected = headerLink.name === activeRoute.name;
               return (
                 <Button
                   key={headerLink.name}
@@ -50,6 +54,8 @@ export const Navigation = ({
 
 Navigation.propTypes = {
   className: PropTypes.string,
+  /* eslint react/forbid-prop-types: 0 */
+  activeRoute: PropTypes.object.isRequired,
   // track: PropTypes.func,
   navigateTo: PropTypes.func
 };

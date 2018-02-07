@@ -1,5 +1,5 @@
 
-.header {
+.nav {
   position: sticky;
   top: 0;
   left: 0;
@@ -10,10 +10,11 @@
   align-items: center;
   flex: 0 0 auto;
   z-index: 9;
-  padding: 0.5rem;
+  padding: 0.1rem 0.5rem 0;
+  border-bottom: solid 4px rgba(255,255,255,0.4);
 
   @media (min-width: 600px) {
-    padding: 1rem;
+    padding: 0.1rem 3rem 0;
   }
 }
 
@@ -32,11 +33,21 @@
   display: block;
   color: inherit;
   padding: 0 0.5rem;
+  position: relative;
+  line-height: 3rem;
 
   @media (min-width: 600px) {
     padding: 0 1rem;
   }
 }
 
-.telNo {
+.selected::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0.25rem;
+  right: 0.25rem;
+  height: 4px;
+  background: rgba(255,255,255,0.4);
+  border-radius: 2px 2px 0 0;
 }
