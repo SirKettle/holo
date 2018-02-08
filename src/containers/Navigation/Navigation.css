@@ -26,7 +26,8 @@
   align-items: center;
 }
 
-.button {
+.item {
+  display: block;
   background: transparent;
   border: none;
   outline: none;
@@ -38,16 +39,36 @@
 
   @media (min-width: 600px) {
     padding: 0 1rem;
+    margin-right: 1px;
   }
 }
 
-.selected::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0.25rem;
-  right: 0.25rem;
-  height: 4px;
-  background: rgba(255,255,255,0.4);
-  border-radius: 2px 2px 0 0;
+.button {
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: transparent;
+    border-radius: 2px 2px 0 0;
+  }
+
+  &:hover::after {
+    background: rgba(255,255,255,0.3);
+  }
+  
+  &.selected::after {
+    background: rgba(255,255,255,0.4);
+  }
+}
+
+.telNo {
+  display: none;
+  @media (min-width: 600px) {
+    display: block;
+  }
 }

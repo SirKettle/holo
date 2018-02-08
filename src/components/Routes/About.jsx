@@ -8,7 +8,7 @@ import imageDogKiss from '../../assets/images/claire_square_dog_kiss.jpg';
 const markdown = `
 ## Who is holo holo?
 
-Claire Buckels:
+### Claire Buckels:
 - Partner and Mum of 2.
 - Trustee and Fundraising Officer for The Beagle Welfare Charity since 2014
 - The Beagle Welfare Charity, AO for Nottingham for 10 years

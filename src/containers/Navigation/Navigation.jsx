@@ -41,13 +41,14 @@ export const Navigation = ({
                   onClick={() => {
                     navigateTo(headerLink.name);
                   }}
-                  className={classnames(styles.button, { [styles.selected]: isSelected })}
+                  className={classnames(styles.item, styles.button, {
+                    [styles.selected]: isSelected })}
                 >{headerLink.label}</Button>
               );
             })
         }
       </div>
-      <div className={classnames(styles.button, styles.telNo)}>{site.claireMobile}</div>
+      <div className={classnames(styles.item, styles.telNo)}>{site.claireMobile}</div>
     </div>
   );
 };

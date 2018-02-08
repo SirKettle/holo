@@ -7,9 +7,7 @@ import * as site from '../../constants/site';
 import imageClaireMountain from '../../assets/images/claire_mountain.jpg';
 
 const markdown = `
-# ${site.name}
-
-## ${site.strap}
+${site.strap}
 `;
 
 function Home() {
