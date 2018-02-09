@@ -3,9 +3,10 @@ import { connect } from 'react-redux';
 import { routeNodeSelector } from 'redux-router5';
 import Layout from '../Layout/Layout';
 import Content from '../Content/Content';
+import Columns from '../Columns/Columns';
 import imageDogKiss from '../../assets/images/claire_square_dog_kiss.jpg';
 
-const markdown = `
+const columnsCopy = [`
 ## Who is holo holo?
 
 ### Claire Buckels:
@@ -15,17 +16,18 @@ const markdown = `
 - Passionate pet owner
 - Experienced dog walker
 - Canine behaviourist BCCSDip.AdvCanBhv
-
----
-
+`, `
 ![A dog kiss](${imageDogKiss})
 _Claire with one of her pet dogs, Alfie._
-`;
+`];
 
 function About() {
   return (
     <Layout>
-      <Content markdown={markdown} />
+      <Columns>
+        <Content markdown={columnsCopy[0]} />
+        <Content markdown={columnsCopy[1]} />
+      </Columns>
     </Layout>
   );
 }

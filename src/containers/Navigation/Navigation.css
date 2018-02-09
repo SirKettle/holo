@@ -1,4 +1,14 @@
 
+/* holo-holo colors */
+/*
+#38bada; /* blue */
+/*
+#ffec14; /* yellow */
+/*
+#d93d9d; /* pink */
+/*
+#e52f2f; /* red */
+
 .nav {
   position: sticky;
   top: 0;
@@ -11,10 +21,17 @@
   flex: 0 0 auto;
   z-index: 9;
   padding: 0.1rem 0.5rem 0;
+  background: #38bada; /* blue */
+  color: white;
   border-bottom: solid 4px rgba(255,255,255,0.4);
 
+   /* blue */
+  /* color: #38bada;
+  background: white;
+  border-bottom: solid 4px #d93d9d; */ /* pink */
+
   @media (min-width: 600px) {
-    padding: 0.1rem 3rem 0;
+    padding: 0.1rem 2rem 0;
   }
 }
 

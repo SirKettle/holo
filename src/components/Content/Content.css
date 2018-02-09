@@ -1,4 +1,19 @@
 
+.content {
+  &.left {
+    text-align: left;
+  }
+  &.center {
+    text-align: center;
+  }
+  &.right {
+    text-align: right;
+  }
+  &.justify {
+    text-align: justify;
+  }
+}
+
 .image {
   width: 100%;
 }
@@ -12,7 +27,8 @@
     padding-left: 1.5rem;
   }
 
-  li {
+  & > li {
     list-style-position: outside;
+    text-align: left;
   }
 }

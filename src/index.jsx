@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import { Connected as App } from './components/App';
 import createRouter from './utils/createRouter';
 import configureStore from './store/configureStore';
+import wallpaper from './assets/images/wallpaper.png';
 
 import routes from './routes';
 
@@ -22,4 +23,5 @@ const wrappedApp = (
 
 router.start((/* err, state */) => {
   ReactDOM.render(wrappedApp, document.getElementById('app'));
+  document.body.style.backgroundImage = `url(${wallpaper})`;
 });

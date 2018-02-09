@@ -26,6 +26,8 @@ const defaultRenderers = {
     React.createElement(args.ordered ? 'ol' : 'ul', {
       className: classnames(styles.list, args.ordered ? styles.ol : styles.ul)
     }, args.children)),
+  blockquote: args => (
+    <blockquote className={classnames(typography.blockQuote)}>{args.children}</blockquote>),
   image: args => (
     <img
       className={classnames(typography.bottomMargin, styles.image)}
@@ -38,10 +40,11 @@ const defaultRenderers = {
 const Content = ({
   className,
   markdown,
-  renderers
+  renderers,
+  justifyText
 }) => (
   <Markdown
-    className={className}
+    className={classnames(styles.content, styles[justifyText], className)}
     source={markdown}
     renderers={renderers}
   />
@@ -49,6 +52,7 @@ const Content = ({
 
 Content.propTypes = {
   className: PropTypes.string,
+  justifyText: PropTypes.oneOf('left', 'center', 'right', 'justify'),
   /* eslint react/forbid-prop-types: 0 */
   renderers: PropTypes.object,
   markdown: PropTypes.string.isRequired
@@ -56,6 +60,7 @@ Content.propTypes = {
 
 Content.defaultProps = {
   className: null,
+  justifyText: 'left',
   renderers: defaultRenderers
 };
 
