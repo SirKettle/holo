@@ -7,6 +7,7 @@ import * as routerSelectors from '../../domains/router/routerSelectors';
 import styles from './Navigation.css';
 import Button from '../../components/Button/Button';
 import * as site from '../../constants/site';
+import { navItemLinks } from '../../routes';
 
 const mapStateToProps = state => ({
   activeRoute: routerSelectors.activeRouteSelector(state)
@@ -16,11 +17,6 @@ const mapDispatchToProps = dispatch => ({
   // track: (key, data) => { trackClick(dispatch, key, data); },
   navigateTo: (name, params) => dispatch(routerActions.navigateTo(name, params))
 });
-
-const headerLinks = [
-  { name: '__root__', label: 'Home' },
-  { name: 'about', label: 'About' }
-];
 
 export const Navigation = ({
   className,
@@ -32,7 +28,7 @@ export const Navigation = ({
     <div className={classnames(className, styles.nav)}>
       <div className={styles.menu}>
         {
-          headerLinks
+          navItemLinks
             .map((headerLink) => {
               const isSelected = headerLink.name === activeRoute.name;
               return (

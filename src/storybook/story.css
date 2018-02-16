@@ -1,7 +1,8 @@
 
 :global(html) {
   display: flex;
-  height: 100%;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 :global(html), body {
@@ -14,7 +15,8 @@
 
 body {
   display: flex;
-  flex: 1 1 auto;
+  flex-direction: column;
+  flex: 1 0 auto;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 100;
@@ -24,7 +26,8 @@ body {
 
 :global(#root) {
   display: flex;
-  flex: 1 1 auto;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 
 hr {
@@ -55,7 +58,7 @@ hr {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  background: #deb853; /* mustard */
+  background: #fafafa; /* mustard */
   color: #333;
 }
 

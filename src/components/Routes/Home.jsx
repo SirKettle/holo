@@ -5,10 +5,12 @@ import Layout from '../Layout/Layout';
 import Content from '../Content/Content';
 import Columns from '../Columns/Columns';
 import * as site from '../../constants/site';
-import imageClaireMountain from '../../assets/images/claire_mountain.jpg';
+import styles from './styles.css';
+import imageHattie from '../../assets/images/hattiefield.jpg';
 
 const columnsCopy = [`
-### ${site.strap}
+# ${site.strap}
+## ${site.description}
 `, `
 For most people who own a dog or small pet, having someone look after them while away proves to be a major problem. This includes work, holidays or other long distance commitments. 
 
@@ -20,9 +22,10 @@ For most people who own a dog or small pet, having someone look after them while
 function Home() {
   return (
     <Layout
-      hero={imageClaireMountain}
+      className={styles.layout}
+      hero={imageHattie}
+      heroCopy={columnsCopy[0]}
     >
-      <Content markdown={columnsCopy[0]} />
       <Columns>
         <Content markdown={columnsCopy[1]} justifyText="justify" />
         <Content markdown={columnsCopy[2]} justifyText="justify" />

@@ -16,7 +16,7 @@ const getHeadingClass = (level) => {
 const defaultRenderers = {
   heading: args => (
     React.createElement(`h${args.level}`, {
-      className: classnames(typography.bottomMargin, getHeadingClass(args.level))
+      className: classnames(typography.margins, getHeadingClass(args.level))
     }, args.children)),
   paragraph: args => (
     <p className={classnames(typography.bottomMargin, typography.hattie)}>{args.children}</p>),
@@ -41,12 +41,13 @@ const Content = ({
   className,
   markdown,
   renderers,
+  noRenderers,
   justifyText
 }) => (
   <Markdown
     className={classnames(styles.content, styles[justifyText], className)}
     source={markdown}
-    renderers={renderers}
+    renderers={noRenderers ? undefined : renderers}
   />
 );
 
@@ -55,12 +56,14 @@ Content.propTypes = {
   justifyText: PropTypes.oneOf('left', 'center', 'right', 'justify'),
   /* eslint react/forbid-prop-types: 0 */
   renderers: PropTypes.object,
+  noRenderers: PropTypes.bool,
   markdown: PropTypes.string.isRequired
 };
 
 Content.defaultProps = {
   className: null,
   justifyText: 'left',
+  noRenderers: false,
   renderers: defaultRenderers
 };
 

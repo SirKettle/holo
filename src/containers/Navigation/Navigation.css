@@ -50,36 +50,30 @@
   outline: none;
   display: block;
   color: inherit;
-  padding: 0 0.5rem;
+  padding: 0 0.75rem;
   position: relative;
   line-height: 3rem;
+  font-size: 13px;
 
   @media (min-width: 600px) {
     padding: 0 1rem;
     margin-right: 1px;
+    font-size: inherit;
   }
+
+  border-bottom: solid 4px transparent;
+  top: 4px;
 }
 
 .button {
   cursor: pointer;
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: transparent;
-    border-radius: 2px 2px 0 0;
-  }
-
-  &:hover::after {
-    background: rgba(255,255,255,0.3);
+  &:hover {
+    border-bottom-color: rgba(255,255,255,0.3);
   }
   
-  &.selected::after {
-    background: rgba(255,255,255,0.4);
+  &.selected {
+    border-bottom-color: rgba(255,255,255,0.4);
   }
 }
 

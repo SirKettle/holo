@@ -3,18 +3,11 @@ import { connect } from 'react-redux';
 import classnames from 'classnames';
 import { routeNodeSelector } from 'redux-router5';
 import { requestIpInfo } from '../domains/config/configActions';
-
-import Home from './Routes/Home';
-import About from './Routes/About';
 import NotFound from './NotFound';
 
 import '../css/reset.css';
 import styles from './App.css';
-
-const components = {
-  __root__: Home,
-  about: About
-};
+import { components } from '../routes';
 
 const mapStateToProps = () => routeNodeSelector('');
 
