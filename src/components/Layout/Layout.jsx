@@ -16,16 +16,20 @@ const Layout = ({
 }) => (
   <div className={classnames(styles.layout, className)}>
     <div className={styles.header}>
-      <img
-        className={styles.logoText}
-        src={logoText}
-        alt="holo-holo"
-      />
-      <img
-        className={styles.logoAnimals}
-        src={logoAnimals}
-        alt="holo-holo"
-      />
+      <div className={styles.logoTextWrapper}>
+        <img
+          className={styles.logoText}
+          src={logoText}
+          alt="holo-holo"
+        />
+      </div>
+      <div className={styles.logoAnimalsWrapper}>
+        <img
+          className={styles.logoAnimals}
+          src={logoAnimals}
+          alt="holo-holo"
+        />
+      </div>
     </div>
     <Navigation className={styles.nav} />
     <div className={styles.heroWrapper}>

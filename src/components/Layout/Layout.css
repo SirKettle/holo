@@ -35,20 +35,23 @@
   }
 }
 
-.logoText {
+.logoTextWrapper {
   flex: 0 0 60%;
-  width: 60%;
-
   @media (min-width: 600px) {
     flex: 0 0 55%;
-    width: 55%;
   }
 }
 
-.logoAnimals {
+.logoText {
+  width: 100%;
+}
+
+.logoAnimalsWrapper {
   flex: 0 0 30%;
-  width: 30%;
-  max-width: 200px;
+}
+
+.logoAnimals {
+  width: 100%;
 }
 
 .heroWrapper {

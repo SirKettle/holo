@@ -5,12 +5,15 @@ import Layout from '../Layout/Layout';
 import Content from '../Content/Content';
 import Columns from '../Columns/Columns';
 import imageDogKiss from '../../assets/images/claire_square_dog_kiss.jpg';
+import heroImage from '../../assets/images/beagles-walking.jpg';
 import * as site from '../../constants/site';
 
 const columnsCopy = [`
-## Who is ${site.name}?
+# About ${site.name}...
+`, `
+### Who is ${site.name}?
 
-### Claire Buckels:
+#### Claire Buckels:
 - Partner and Mum of 2.
 - Trustee and Fundraising Officer for The Beagle Welfare Charity since 2014
 - The Beagle Welfare Charity, AO for Nottingham for 10 years
@@ -45,10 +48,13 @@ _Claire with one of her pet dogs, Alfie._
 
 function About() {
   return (
-    <Layout>
+    <Layout
+      hero={heroImage}
+      heroCopy={columnsCopy[0]}
+    >
       <Columns>
-        <Content markdown={columnsCopy[0]} />
         <Content markdown={columnsCopy[1]} />
+        <Content markdown={columnsCopy[2]} />
       </Columns>
     </Layout>
   );

@@ -54,6 +54,7 @@
   position: relative;
   line-height: 3rem;
   font-size: 13px;
+  margin: 0;
 
   @media (min-width: 600px) {
     padding: 0 1rem;

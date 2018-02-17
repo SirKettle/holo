@@ -1,7 +1,9 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { routeNodeSelector } from 'redux-router5';
-import Layout from '../Layout/Layout';
+import { storiesOf } from '@storybook/react';
+import { withKnobs/* , text */ } from '@storybook/addon-knobs';
+import Story from '../../storybook/story';
+import storeDecorator from '../../storybook/decorators/storeDecorator';
+import Layout from './Layout';
 import Sections from '../Sections/Sections';
 import * as site from '../../constants/site';
 // import * as site from '../../constants/site';
@@ -68,15 +70,19 @@ const sections = [{
   label: '60 minutes £10, £5 per additional dog. Additional cost if by themselves'
 }];
 
-function Services() {
-  return (
-    <Layout
-      hero={imageClaireMountain}
-      heroCopy={copy}
+storiesOf('Layout', module)
+  .addDecorator(withKnobs)
+  .addDecorator(storeDecorator)
+  .add('Main layout', () => (
+    <Story
+      title="Layout"
+      summary="The main layout of the website"
     >
-      <Sections sections={sections} />
-    </Layout>
-  );
-}
-
-export default connect(() => routeNodeSelector(''))(Services);
+      <Layout
+        hero={imageClaireMountain}
+        heroCopy={copy}
+      >
+        <Sections sections={sections} />
+      </Layout>
+    </Story>
+  ));
