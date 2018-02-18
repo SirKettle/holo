@@ -30,7 +30,7 @@ export const Navigation = ({
         {
           navItemLinks
             .map((headerLink) => {
-              const isSelected = headerLink.name === activeRoute && activeRoute.name;
+              const isSelected = activeRoute && headerLink.name === activeRoute.name;
               return (
                 <Button
                   key={headerLink.name}
