@@ -7,6 +7,7 @@
   background: #f1f1f1;
   background: #f4efe2;
   background: #f1f0e9;
+  overflow: hidden;
 }
 
 .flowers {
@@ -39,7 +40,7 @@
 .content {
   display: flex;
   flex-direction: row;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
 }
 
 .image {
@@ -52,10 +53,11 @@
 
 .details {
   flex: 0 1 auto;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   padding: 1rem;
   color: #333;
+  max-width: 50%;
 }
 
 .tag {

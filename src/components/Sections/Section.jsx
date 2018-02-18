@@ -29,7 +29,7 @@ const Section = ({
       /> : null }
     <div className={styles.content}>
       <div className={styles.details}>
-        <Content className={styles.content} markdown={details} />
+        <Content markdown={details} />
         { tag ?
           <Content
             className={classnames(typography.puppy, styles.tag)}

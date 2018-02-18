@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import { Connected as Navigation } from '../../containers/Navigation/Navigation';
 import Footer from '../Footer/Footer';
 import Content from '../Content/Content';
+import FixedRatioContainer from '../FixedRatioContainer/FixedRatioContainer';
 import styles from './Layout.css';
 import logoText from '../../assets/images/logo-text_1000x352.png';
 import logoAnimals from '../../assets/images/logo-animals_924x824.png';
@@ -16,19 +17,31 @@ const Layout = ({
 }) => (
   <div className={classnames(styles.layout, className)}>
     <div className={styles.header}>
-      <div className={styles.logoTextWrapper}>
-        <img
-          className={styles.logoText}
-          src={logoText}
-          alt="holo-holo"
-        />
+      <div className={styles.logoTextFlex}>
+        <FixedRatioContainer
+          className={styles.logoTextWrapper}
+          width={1000}
+          height={352}
+        >
+          <img
+            className={styles.logoText}
+            src={logoText}
+            alt="holo-holo"
+          />
+        </FixedRatioContainer>
       </div>
-      <div className={styles.logoAnimalsWrapper}>
-        <img
-          className={styles.logoAnimals}
-          src={logoAnimals}
-          alt="holo-holo"
-        />
+      <div className={styles.logoAnimalsFlex}>
+        <FixedRatioContainer
+          className={styles.logoAnimalsWrapper}
+          width={924}
+          height={824}
+        >
+          <img
+            className={styles.logoAnimals}
+            src={logoAnimals}
+            alt="holo-holo"
+          />
+        </FixedRatioContainer>
       </div>
     </div>
     <Navigation className={styles.nav} />
