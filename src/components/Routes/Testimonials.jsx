@@ -8,16 +8,16 @@ import * as site from '../../constants/site';
 import heroImage from '../../assets/images/black_dog_ears.jpg';
 
 const columnsCopy = [`
-## Testimonials 
-### What my clients have said about **${site.name}**
+## What my clients have said about **${site.name}**
+---
 `, `
->Claire is literally the dog's b*&%$@ks at looiking after errr... dogs
+>I would highly recommend Claire. She is highly experienced and qualified with animals of all types but especially doggies. She is very professional, fun, caring and loving towards the animals she cares for. Your pet will be in excellent hands.
+
+_Sara Rutherford-Spencer_
+`, `
+>Claire is such a lovely lady who deeply cares about the animals she looks after. Hattie, our cocker spaniel gets so excited whenever we arrive at her house
 
 _Will Thirkettle_
-`, `
->Claire takes my beagles for wonderful walks innit
-
-_The Queen of England_
 `];
 
 function Testimonials() {

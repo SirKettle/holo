@@ -6,12 +6,17 @@ import Content from '../Content/Content';
 import Columns from '../Columns/Columns';
 import imageDogKiss from '../../assets/images/claire_square_dog_kiss.jpg';
 import heroImage from '../../assets/images/beagles-walking.jpg';
+import imageYoungClaire from '../../assets/images/claire_young.jpg';
+import imageHeads from '../../assets/images/heads.jpg';
+import logoAnimals from '../../assets/images/logo-animals_924x824.png';
 import * as site from '../../constants/site';
 
 const columnsCopy = [`
 # About ${site.name}...
 `, `
 ### Who is ${site.name}?
+
+![Claire Buckels with Alfie and Dora](${imageHeads})
 
 #### Claire Buckels:
 - Partner and Mum of 2.
@@ -21,6 +26,15 @@ const columnsCopy = [`
 - Experienced dog walker
 - Canine behaviourist BCCSDip.AdvCanBhv
 
+![Young Claire Buckels](${imageYoungClaire})
+_A very young Claire!_
+
+### Why choose ${site.name}?
+- DBS checked
+- Canine first aid trained
+- Fully insured
+- I hold a level 4 accredited advanced diploma in canine behaviour
+`, `
 ### What is ${site.name}?
 - Regular or occasional dog walking
 - Small pet care
@@ -29,12 +43,6 @@ const columnsCopy = [`
 - Pet taxi
 - Puppy socialisation
 
-### Why choose ${site.name}?
-- DBS checked
-- Canine first aid trained
-- Fully insured
-- I hold a level 4 accredited advanced diploma in canine behaviour
-`, `
 ![A dog kiss](${imageDogKiss})
 _Claire with one of her pet dogs, Alfie._
 
@@ -43,6 +51,8 @@ _Claire with one of her pet dogs, Alfie._
 - When someone is going holo-holo, they’re adventuring for fun. It’s kind of like a journey without a destination
 - My favourite thing to do, namesake and inspiration
 - Memories of Hawaii incorporated with my love and passion for animal welfare
+
+![${site.name} animals](${logoAnimals})
 
 `];
 

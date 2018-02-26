@@ -8,6 +8,7 @@ import logoDbs from '../../assets/images/dbs.png';
 import logoBccs from '../../assets/images/bccs.jpg';
 import logoFirstaid from '../../assets/images/firstaid.jpg';
 import logoCliverton from '../../assets/images/cliverton.jpg';
+import findUsOnFacebookLogo from '../../assets/FB-FindUsonFacebook-online-512.png';
 
 const renderers = {
   heading: args => (
@@ -39,6 +40,11 @@ const Footer = ({
       <div className={styles.logo} style={{ backgroundImage: `url(${logoFirstaid})` }} />
     </div>
     <div className={classnames(styles.legal, className)}>
+      <div className={styles.findUsOnFacebook}>
+        <a className={styles.findUsOnFacebookLink} href={site.facebookPage} rel="noopener noreferrer" target="_blank">
+          <img src={findUsOnFacebookLogo} alt="Find us on Facebook" className={styles.findUsOnFacebookLogo} />
+        </a>
+      </div>
       <Content markdown={markdown} renderers={renderers} />
     </div>
   </div>

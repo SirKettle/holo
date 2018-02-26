@@ -19,6 +19,24 @@
   }
 }
 
+.findUsOnFacebook {
+  width: 200px;
+  margin-bottom: 2rem;
+  /* margin: 0 auto 1rem; */
+}
+
+.findUsOnFacebookLink {
+  display: block;
+  background: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.findUsOnFacebookLogo {
+  display: block;
+  width: 100%;
+}
+
 .logo {
   margin: 1rem;
   height: 120px;
