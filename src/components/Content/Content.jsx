@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import Markdown from 'react-markdown';
 import classnames from 'classnames';
+import visit from 'unist-util-visit';
 import typography from '../../css/typography.css';
 import styles from './Content.css';
 
@@ -11,6 +12,17 @@ const getHeadingClass = (level) => {
     typography.beau,
     typography.harvey
   ][level - 1];
+};
+
+const stripImageParagraphPlugin = (tree) => {
+  visit(tree, 'paragraph', (node, index, parent) => {
+    if (node.children && node.children[0].type === 'image') {
+      /* eslint no-param-reassign: 0 */
+      parent.children[index] = node.children[0];
+    }
+  });
+
+  return tree;
 };
 
 const defaultRenderers = {
@@ -48,6 +60,7 @@ const Content = ({
     className={classnames(styles.content, styles[justifyText], className)}
     source={markdown}
     renderers={noRenderers ? undefined : renderers}
+    astPlugins={[stripImageParagraphPlugin]}
   />
 );
 

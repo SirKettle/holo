@@ -117,6 +117,7 @@
     "redux-thunk": "^2.2.0",
     "reselect": "^2.5.4",
     "router5": "^4.5.1",
+    "unist-util-visit": "^1.3.0",
     "whatwg-fetch": "^2.0.3"
   },
   "jest": {
