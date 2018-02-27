@@ -11,8 +11,8 @@ import imageBlackDog from '../../assets/images/services/black_dog_square.jpg';
 import imageFletcherWalk from '../../assets/images/services/walk_fletcher.jpg';
 import imageWalkBeagles from '../../assets/images/services/walk_beagles.jpg';
 import imageGardenBreak from '../../assets/images/services/garden_break.jpg';
-import imagePuppy from '../../assets/images/services/puppy.jpg';
-import imageCatCarrier from '../../assets/images/services/catcarrier.jpg';
+import imagePuppy from '../../assets/images/services/puppy2.jpg';
+import imagePetTaxi from '../../assets/images/services/pettaxi.jpg';
 import imageCats from '../../assets/images/services/cats.jpg';
 
 const copy = `
@@ -30,7 +30,7 @@ const sections = [{
   tag: 'Text update provided',
   label: '30 minutes £8'
 }, {
-  image: imageCatCarrier,
+  image: imagePetTaxi,
   title: 'Pet taxi',
   details: 'I’ll transport your pet to the vet or to any other destination for you and save you the anxieties ',
   tag: 'Text update provided',

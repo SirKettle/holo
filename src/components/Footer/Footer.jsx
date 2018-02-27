@@ -12,21 +12,23 @@ import findUsOnFacebookLogo from '../../assets/FB-FindUsonFacebook-online-512.pn
 
 const renderers = {
   heading: args => (
-    <p className={classnames(typography.smallMargins, typography.hattie)}>
-      <strong>{args.children}</strong>
+    <p className={classnames(typography.smallMargins, typography.puppy)}>
+      {args.children}
     </p>),
   paragraph: args => (
-    <p className={classnames(typography.smallMargins, typography.puppy)}>{args.children}</p>)
+    <p className={classnames(typography.smallMargins, typography.hattie)}>{args.children}</p>),
+  strong: args => (
+    <span className={classnames(typography.smallMargins, typography.harvey)}>{args.children}</span>)
 };
 
 const markdown = `
-  ### &copy; ${site.name} ${new Date().getUTCFullYear()}
-  
   ${site.description}
 
   _${site.strap}_
   
-  Please call Claire on ${site.claireMobile}
+  **Please call Claire on ${site.claireMobile} or email [${site.email}](mailto:${site.email})**
+
+  ### &copy; ${site.name} ${new Date().getUTCFullYear()}
 `;
 
 const Footer = ({

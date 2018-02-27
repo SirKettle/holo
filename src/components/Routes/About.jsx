@@ -6,7 +6,7 @@ import Content from '../Content/Content';
 import Columns from '../Columns/Columns';
 import imageDogKiss from '../../assets/images/claire_square_dog_kiss.jpg';
 import heroImage from '../../assets/images/beagles-walking.jpg';
-import imageYoungClaire from '../../assets/images/claire_young.jpg';
+import imageDoraClaire from '../../assets/images/claire_dora.jpg';
 import imageHeads from '../../assets/images/heads.jpg';
 import logoAnimals from '../../assets/images/logo-animals_924x824.png';
 import * as site from '../../constants/site';
@@ -21,12 +21,12 @@ const columnsCopy = [`
 #### Claire Buckels:
 - Partner and Mum of 2.
 - Trustee and Fundraising Officer for The Beagle Welfare Charity since 2014
-- The Beagle Welfare Charity, AO for Nottingham for 10 years
+- The Beagle Welfare Charity, Area Officer for Nottingham for 10 years
 - Passionate pet owner
 - Experienced dog walker
 - Canine behaviourist BCCSDip.AdvCanBhv
 
-![Young Claire Buckels](${imageYoungClaire})
+![Claire Buckels with Dora](${imageDoraClaire})
 _A very young Claire!_
 
 ### Why choose ${site.name}?
