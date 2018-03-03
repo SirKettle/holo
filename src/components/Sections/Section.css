@@ -44,24 +44,24 @@
   flex-direction: column;
   flex: 1 0 auto;
 
-  @media (min-width: 400px) {
+  @media (min-width: 850px) {
     flex-direction: row;
   }
 }
 
 .image {
-  flex: 0 0 240px;
+  flex: 0 0 350px;
   order: 0;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 0 0 10px 0;
   
-  @media (min-width: 400px) {
+  @media (min-width: 850px) {
     flex: 0 0 50%;
     order: 1;
     min-height: 250px;
+    border-radius: 0 0 10px 0;
   }
 }
 
@@ -72,7 +72,7 @@
   padding: 1rem;
   color: #333;
 
-  @media (min-width: 400px) {
+  @media (min-width: 850px) {
     flex: 0 1 auto;
     max-width: 50%;
     order: 0;
