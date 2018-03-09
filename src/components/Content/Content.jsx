@@ -46,7 +46,13 @@ const defaultRenderers = {
       src={args.src}
       alt={args.alt}
     />
-  )
+  ),
+  link: (args) => {
+    const newTab = args.href.indexOf('http') !== -1;
+    return (<a href={args.href} target={newTab ? '_blank' : '_self'}>
+      { args.children }
+    </a>);
+  }
 };
 
 const Content = ({

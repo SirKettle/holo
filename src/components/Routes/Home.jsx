@@ -7,6 +7,9 @@ import Columns from '../Columns/Columns';
 import * as site from '../../constants/site';
 import styles from './styles.css';
 import imageHattie from '../../assets/images/hattiefield.jpg';
+import imageBlackDog from '../../assets/images/black_dog_ears.jpg';
+import imageClaireMountain from '../../assets/images/claire_mountain.jpg';
+import imageBeagleWalk from '../../assets/images/beagles-walking.jpg';
 
 const columnsCopy = [`
 # ${site.strap}
@@ -23,7 +26,7 @@ function Home() {
   return (
     <Layout
       className={styles.layout}
-      hero={imageHattie}
+      slideShowImages={[imageHattie, imageBlackDog, imageClaireMountain, imageBeagleWalk]}
       heroCopy={columnsCopy[0]}
     >
       <Columns>

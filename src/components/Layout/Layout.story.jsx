@@ -8,8 +8,8 @@ import Sections from '../Sections/Sections';
 import * as site from '../../constants/site';
 // import * as site from '../../constants/site';
 import imageClaireMountain from '../../assets/images/claire_mountain.jpg';
-import imageRabbit from '../../assets/images/rabbit-hutch.jpg';
-import imageBlackDog from '../../assets/images/black_dog_square.jpg';
+import imageRabbit from '../../assets/images/services/rabbit-hutch.jpg';
+import imageBlackDog from '../../assets/images/services/black_dog_square.jpg';
 
 const copy = `
 # Services

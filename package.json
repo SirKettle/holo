@@ -109,6 +109,7 @@
     "react-router-redux": "^4.0.8",
     "react-router5": "^4.0.1",
     "react-swipeable": "^4.1.0",
+    "react-timeout": "^1.1.1",
     "redux": "^3.6.0",
     "redux-devtools-extension": "^2.13.0",
     "redux-logger": "^2.8.1",

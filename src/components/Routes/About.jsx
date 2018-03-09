@@ -10,6 +10,7 @@ import imageDoraClaire from '../../assets/images/claire_dora.jpg';
 import imageHeads from '../../assets/images/heads.jpg';
 import logoAnimals from '../../assets/images/logo-animals_924x824.png';
 import * as site from '../../constants/site';
+import Blog from '../Blog/Blog';
 
 const columnsCopy = [`
 # About ${site.name}...
@@ -34,7 +35,7 @@ _A very young Claire!_
 - Canine first aid trained
 - Fully insured
 - I hold a level 4 accredited advanced diploma in canine behaviour
-`, `
+
 ### What is ${site.name}?
 - Regular or occasional dog walking
 - Small pet care
@@ -64,7 +65,10 @@ function About() {
     >
       <Columns>
         <Content markdown={columnsCopy[1]} />
-        <Content markdown={columnsCopy[2]} />
+        <Blog
+          loadingContent={'### What have I been up to...?'}
+          preContent={'### This is what I’ve been up to'}
+        />
       </Columns>
     </Layout>
   );

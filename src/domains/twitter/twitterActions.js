@@ -1,4 +1,5 @@
 import 'whatwg-fetch';
+import tweetsJson from '../../../mock/data/tweets.json';
 
 export const actionTypes = {
   LOAD_TWEETS_PENDING: 'LOAD_TWEETS_PENDING',
@@ -6,12 +7,26 @@ export const actionTypes = {
   LOAD_TWEETS_ERROR: 'LOAD_TWEETS_ERROR'
 };
 
-export const loadTweets = (dispatch) => {
+const isDebugMode = false;
+
+export function loadTweets(dispatch) {
   dispatch({
     type: actionTypes.LOAD_TWEETS_PENDING
   });
 
-  return fetch('http://server.willthirkettle.co.uk/api/tweets.php', {
+  if (isDebugMode) {
+    setTimeout(() => {
+      dispatch({
+        type: actionTypes.LOAD_TWEETS_SUCCESS,
+        payload: tweetsJson
+      });
+    }, 300);
+    return null;
+  }
+
+  const userId = 'holohol97642100';
+
+  return fetch(`http://server.willthirkettle.co.uk/api/tweets.php?count=7&user=${userId}`, {
     method: 'GET'
   }).then((response) => {
     return response.json();
@@ -23,4 +38,4 @@ export const loadTweets = (dispatch) => {
       payload
     });
   });
-};
+}
