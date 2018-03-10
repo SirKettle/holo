@@ -18,11 +18,12 @@ const composeTweet = (datum) => {
   const textParts = datum.get('text').split(' ');
   const url = textParts.pop();
   const text = textParts.join(' ');
+  const media = datum.getIn(['entities', 'media']) || [];
   return Immutable.Map({
     text,
     url,
     time: `Posted ${dateString}`,
-    images: datum.getIn(['entities', 'media'])
+    images: media
       .filter(m => m.get('type') === 'photo')
       .map(m => Immutable.Map({
         src: m.get('media_url'),
