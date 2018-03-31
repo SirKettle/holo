@@ -6,6 +6,9 @@ import Content from '../Content/Content';
 import Columns from '../Columns/Columns';
 import * as site from '../../constants/site';
 import styles from './styles.css';
+import imageClaireField1 from '../../assets/images/claire_field_1.jpg';
+import imageClaireField2 from '../../assets/images/claire_field_2.jpg';
+import imageClaireField3 from '../../assets/images/claire_field_3.jpg';
 import imageHattie from '../../assets/images/hattiefield.jpg';
 import imageBlackDog from '../../assets/images/black_dog_ears.jpg';
 import imageClaireMountain from '../../assets/images/claire_mountain.jpg';
@@ -26,7 +29,11 @@ function Home() {
   return (
     <Layout
       className={styles.layout}
-      slideShowImages={[imageHattie, imageBlackDog, imageClaireMountain, imageBeagleWalk]}
+      slideShowImages={[
+        imageClaireField3, imageClaireField2, imageClaireField1,
+        imageHattie, imageBlackDog, imageClaireMountain,
+        imageBeagleWalk
+      ]}
       heroCopy={columnsCopy[0]}
     >
       <Columns>

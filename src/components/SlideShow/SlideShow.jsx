@@ -86,7 +86,7 @@ SlideShow.propTypes = {
 
 SlideShow.defaultProps = {
   className: null,
-  displayTime: 5000,
+  displayTime: 3500,
   fadeTime: 1500
 };
 
