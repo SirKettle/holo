@@ -5,7 +5,7 @@ import Layout from '../Layout/Layout';
 import Content from '../Content/Content';
 import Columns from '../Columns/Columns';
 import * as site from '../../constants/site';
-import heroImage from '../../assets/images/black_dog_ears.jpg';
+import heroImage from '../../assets/images/slides/black_dog_ears.jpg';
 
 const columnsCopy = [`
 ## What my clients have said about **${site.name}**

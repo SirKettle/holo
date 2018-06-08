@@ -5,7 +5,7 @@ import Layout from '../Layout/Layout';
 import Sections from '../Sections/Sections';
 import * as site from '../../constants/site';
 // import * as site from '../../constants/site';
-import imageClaireMountain from '../../assets/images/claire_mountain.jpg';
+import imageClaireMountain from '../../assets/images/slides/claire_mountain.jpg';
 import imageRabbit from '../../assets/images/services/rabbit-hutch.jpg';
 import imageBlackDog from '../../assets/images/services/dogdaycare.jpg';
 import imageFletcherWalk from '../../assets/images/services/outdoorssunshinewalk.jpg';
@@ -64,15 +64,15 @@ const sections = [{
   image: imageWalkBeagles,
   title: '30 minute walk',
   details: '30 minutes’ walk either by themselves or as a group. Rural locations and local parks. Towel dried on return',
-  tag: 'Text update provided',
-  label: '30 minutes £8, £4 per additional dog. Additional cost if by themselves'
+  tag: 'Text update provided. Please contact if your dog needs walking alone, rather than in a group',
+  label: '30 minutes £8, £4 per additional dog'
 
 }, {
   image: imageFletcherWalk,
   title: '60 minutes walk',
   details: '60 minutes’ walk either by themselves or as a group. Rural locations and local parks. Towel dried on return',
-  tag: 'Text update provided',
-  label: '60 minutes £10, £5 per additional dog. Additional cost if by themselves'
+  tag: 'Text update provided. Please contact if your dog needs walking alone, rather than in a group',
+  label: '60 minutes £10, £5 per additional dog'
 }];
 
 function Services() {

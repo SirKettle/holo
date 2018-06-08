@@ -5,7 +5,7 @@ import Layout from '../Layout/Layout';
 import Content from '../Content/Content';
 import Columns from '../Columns/Columns';
 import imageDogKiss from '../../assets/images/claire_square_dog_kiss.jpg';
-import heroImage from '../../assets/images/claire_field_1.jpg';
+import heroImage from '../../assets/images/slides/claire_field_1.jpg';
 import imageDoraClaire from '../../assets/images/claire_dora.jpg';
 import imageHeads from '../../assets/images/heads.jpg';
 import logoAnimals from '../../assets/images/logo-animals_924x824.png';

@@ -6,13 +6,16 @@ import Content from '../Content/Content';
 import Columns from '../Columns/Columns';
 import * as site from '../../constants/site';
 import styles from './styles.css';
-import imageClaireField1 from '../../assets/images/claire_field_1.jpg';
-import imageClaireField2 from '../../assets/images/claire_field_2.jpg';
-import imageClaireField3 from '../../assets/images/claire_field_3.jpg';
-import imageHattie from '../../assets/images/hattiefield.jpg';
-import imageBlackDog from '../../assets/images/black_dog_ears.jpg';
-import imageClaireMountain from '../../assets/images/claire_mountain.jpg';
-import imageBeagleWalk from '../../assets/images/beagles-walking.jpg';
+import imageClaireField1 from '../../assets/images/slides/claire_field_1.jpg';
+import imageClaireField2 from '../../assets/images/slides/claire_field_2.jpg';
+import imageClaireField3 from '../../assets/images/slides/claire_field_3.jpg';
+import imageHattie from '../../assets/images/slides/hattiefield.jpg';
+import imageBlackDog from '../../assets/images/slides/black_dog_ears.jpg';
+import imageClaireMountain from '../../assets/images/slides/claire_mountain.jpg';
+import imageBeagleWalk from '../../assets/images/slides/beagles-walking.jpg';
+import imageGrassJump from '../../assets/images/slides/grass_jump.jpg';
+import imageDaneKiss from '../../assets/images/slides/dane_kiss.jpg';
+import imageBigTongue from '../../assets/images/slides/big_tongue.jpg';
 
 const columnsCopy = [`
 # ${site.strap}
@@ -30,6 +33,7 @@ function Home() {
     <Layout
       className={styles.layout}
       slideShowImages={[
+        imageBigTongue, imageDaneKiss, imageGrassJump,
         imageClaireField3, imageClaireField2, imageClaireField1,
         imageHattie, imageBlackDog, imageClaireMountain,
         imageBeagleWalk
