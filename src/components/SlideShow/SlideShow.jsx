@@ -45,11 +45,22 @@ class SlideShow extends Component {
     });
   }
 
+  preloadImage = (src) => {
+    const image = new Image();
+    image.src = src;
+  }
+
+  preloadImages() {
+    this.props.images.forEach(this.preloadImage);
+  }
+
   render() {
     const { className, images, fadeTime } = this.props;
 
     const nextImageIndex = this.state.transition
       ? this.getNextIndex() : this.state.currentIndex;
+
+    this.preloadImages();
 
     return (
       <FixedRatioContainer
