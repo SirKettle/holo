@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 import path from 'path';
 
 const env = process.env.NODE_ENV;
@@ -57,6 +58,12 @@ const loadPlugins = () => {
     new ExtractTextPlugin('[name].bundle-[chunkhash].css')
   );
 
+  plugins.push(
+    new CopyWebpackPlugin([
+      {from:'src/assets',to:'images'} 
+    ])
+  );
+
   return plugins;
 };
 
@@ -98,18 +105,6 @@ const config = {
         loaders: ['babel-loader']
       },
       {
-        test: /\.png$/,
-        use: 'url-loader?mimetype=image/png'
-      },
-      {
-        test: /\.(jpeg|jpg)$/,
-        use: 'url-loader?mimetype=image/jpeg'
-      },
-      {
-        test: /\.svg$/,
-        use: 'url-loader?mimetype=image/svg+xml'
-      },
-      {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           use: [
@@ -131,6 +126,16 @@ const config = {
             }
           ]
         })
+      },
+      {
+        test: /\.(png|jp(e*)g|svg)$/,  
+        use: [{
+          loader: 'url-loader',
+          options: { 
+            limit: 8000, // Convert images < 8kb to base64 strings
+            name: 'images/[hash]-[name].[ext]'
+          } 
+        }]
       }
     ]
   },
