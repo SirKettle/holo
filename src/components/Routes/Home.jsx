@@ -10,7 +10,10 @@ import imageClaireField1 from '../../assets/images/slides/claire_field_1.jpg';
 import imageClaireField2 from '../../assets/images/slides/claire_field_2.jpg';
 import imageClaireField3 from '../../assets/images/slides/claire_field_3.jpg';
 import imageHattie from '../../assets/images/slides/hattiefield.jpg';
-import imageBlackDog from '../../assets/images/slides/black_dog_ears.jpg';
+import imagePussy from '../../assets/images/slides/pussy.jpg';
+import imageRunning from '../../assets/images/slides/running.jpg';
+import imageSittingDogs from '../../assets/images/slides/sitting_dogs.jpg';
+import imageSummer from '../../assets/images/slides/summer.jpg';
 import imageClaireMountain from '../../assets/images/slides/claire_mountain.jpg';
 import imageBeagleWalk from '../../assets/images/slides/beagles-walking.jpg';
 import imageGrassJump from '../../assets/images/slides/grass_jump.jpg';
@@ -35,8 +38,8 @@ function Home() {
       slideShowImages={[
         imageBigTongue, imageDaneKiss, imageGrassJump,
         imageClaireField3, imageClaireField2, imageClaireField1,
-        imageHattie, imageBlackDog, imageClaireMountain,
-        imageBeagleWalk
+        imageHattie, imagePussy, imageRunning, imageSittingDogs,
+        imageSummer, imageClaireMountain, imageBeagleWalk
       ]}
       heroCopy={columnsCopy[0]}
     >

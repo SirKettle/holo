@@ -8,6 +8,7 @@ import imageDogKiss from '../../assets/images/claire_square_dog_kiss.jpg';
 import heroImage from '../../assets/images/slides/claire_field_1.jpg';
 import imageDoraClaire from '../../assets/images/claire_dora.jpg';
 import imageHeads from '../../assets/images/heads.jpg';
+import imageVan from '../../assets/images/van.jpg';
 import logoAnimals from '../../assets/images/logo-animals_924x824.png';
 import * as site from '../../constants/site';
 import Blog from '../Blog/Blog';
@@ -21,7 +22,7 @@ const columnsCopy = [`
 
 #### Claire Buckels:
 - Partner and Mum of 2.
-- Trustee and Fundraising Officer for The Beagle Welfare Charity since 2014
+- Was Trustee and Fundraising Officer for The Beagle Welfare Charity (2014-18)
 - The Beagle Welfare Charity, Area Officer for Nottingham for 10 years
 - Passionate pet owner
 - Experienced dog walker
@@ -35,6 +36,9 @@ _A very young Claire!_
 - Canine first aid trained
 - Fully insured
 - I hold a level 4 accredited advanced diploma in canine behaviour
+- VW van fitted with automatic temperature control extraction to the rear and four bespoke, key lockable [Alpha Dog Cages](http://alphadogcages.co.uk) to provide cool, safe and secure transport
+
+![The van](${imageVan})
 
 ### What is ${site.name}?
 - Regular or occasional dog walking
