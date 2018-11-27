@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "/Users/wthirkettle/workspace/mono"
+		}
+	],
+	"settings": {
+		"[handlebars]": {
+			"editor.formatOnSave": false
+		},
+	}
+}

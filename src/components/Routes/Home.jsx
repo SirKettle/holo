@@ -12,7 +12,6 @@ import imageClaireField3 from '../../assets/images/slides/claire_field_3.jpg';
 import imageHattie from '../../assets/images/slides/hattiefield.jpg';
 import imagePussy from '../../assets/images/slides/pussy.jpg';
 import imageRunning from '../../assets/images/slides/running.jpg';
-import imageSittingDogs from '../../assets/images/slides/sitting_dogs.jpg';
 import imageSummer from '../../assets/images/slides/summer.jpg';
 import imageClaireMountain from '../../assets/images/slides/claire_mountain.jpg';
 import imageBeagleWalk from '../../assets/images/slides/beagles-walking.jpg';
@@ -36,9 +35,9 @@ function Home() {
     <Layout
       className={styles.layout}
       slideShowImages={[
-        imageBigTongue, imageDaneKiss, imageGrassJump,
-        imageClaireField3, imageClaireField2, imageClaireField1,
-        imageHattie, imagePussy, imageRunning, imageSittingDogs,
+        imageRunning, imageBigTongue, imageClaireField1,
+        imageDaneKiss, imageGrassJump, imageClaireField3,
+        imagePussy, imageHattie, imageClaireField2,
         imageSummer, imageClaireMountain, imageBeagleWalk
       ]}
       heroCopy={columnsCopy[0]}

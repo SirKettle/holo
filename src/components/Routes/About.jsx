@@ -22,7 +22,7 @@ const columnsCopy = [`
 
 #### Claire Buckels:
 - Partner and Mum of 2.
-- Was Trustee and Fundraising Officer for The Beagle Welfare Charity (2014-18)
+- Trustee and Fundraising Officer for The Beagle Welfare Charity (2014-18)
 - The Beagle Welfare Charity, Area Officer for Nottingham for 10 years
 - Passionate pet owner
 - Experienced dog walker
