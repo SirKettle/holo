@@ -30,14 +30,14 @@ const sections = [{
   title: '30 minute walk',
   details: '30 minutes’ walk either by themselves or as a group. Rural locations and local parks. Towel dried on return',
   tag: 'Text update provided.',
-  label: '30 minutes £8, £4 per additional dog, 1-2-1 dog walking £10'
+  label: '30 minutes £8, £4 per additional dog, 1-2-1 dog walking £10. Evening (after 5pm) weekend and bank holiday walks are charged a rate of time & a half.'
 
 }, {
   image: imageFletcherWalk,
   title: '60 minutes walk',
   details: '60 minutes’ walk either by themselves or as a group. Rural locations and local parks. Towel dried on return',
   tag: 'Text update provided.',
-  label: '60 minutes £10, £5 per additional dog, 1-2-1 dog walking £12'
+  label: '60 minutes £10, £5 per additional dog, 1-2-1 dog walking £15. Evening (after 5pm) weekend and bank holiday walks are charged a rate of time & a half.'
 }, {
   image: imageGardenBreak,
   title: 'Garden break',
