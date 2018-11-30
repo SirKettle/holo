@@ -25,31 +25,33 @@ const copy = `
 ### However, I also provide secondary services alongside this including garden breaks, pet taxi, cat sitting, small pet care and puppy socialisation time.
 `;
 
+const eveningBankHolidaysSpiel = 'Evening (after 5pm) weekend and bank holiday walks are charged a rate of time & a half.';
+
 const sections = [{
   image: imageRunning,
   title: '30 minute walk',
   details: '30 minutes’ walk either by themselves or as a group. Rural locations and local parks. Towel dried on return',
   tag: 'Text update provided.',
-  label: '30 minutes £8, £4 per additional dog, 1-2-1 dog walking £10. Evening (after 5pm) weekend and bank holiday walks are charged a rate of time & a half.'
+  label: `30 minutes £8, £4 per additional dog, 1-2-1 dog walking £12. ${eveningBankHolidaysSpiel}`
 
 }, {
   image: imageFletcherWalk,
   title: '60 minutes walk',
   details: '60 minutes’ walk either by themselves or as a group. Rural locations and local parks. Towel dried on return',
   tag: 'Text update provided.',
-  label: '60 minutes £10, £5 per additional dog, 1-2-1 dog walking £15. Evening (after 5pm) weekend and bank holiday walks are charged a rate of time & a half.'
+  label: `60 minutes £10, £5 per additional dog, 1-2-1 dog walking £15. ${eveningBankHolidaysSpiel}`
 }, {
   image: imageGardenBreak,
   title: 'Garden break',
   details: 'For dogs who for some reason don’t need walking but just need a garden break and a little company ',
   tag: 'Text update provided',
-  label: '30 minutes £8'
+  label: `30 minutes £8. ${eveningBankHolidaysSpiel}`
 }, {
   image: imagePetTaxi,
   title: 'Pet taxi',
   details: 'I’ll transport your pet to the vet or to any other destination for you and save you the anxieties ',
   tag: 'Text update provided',
-  label: 'Duration varies £8 per 30 minutes'
+  label: `Duration varies £8 per 30 minutes. ${eveningBankHolidaysSpiel}`
 }, {
   image: imageBlackDog,
   title: 'Dog day care',
@@ -61,7 +63,7 @@ const sections = [{
   title: 'Puppy socialisation time',
   details: 'Having studied canine behaviour, I understand the importance of socialisation from a young age and the impact the lack of it can have on a dogs future behaviour. If you’re too busy, I can introduce them to everyday stimuli. Traffic, dog groups, children etc and work on basic training',
   tag: 'Text update provided',
-  label: '£8 per 30 minutes'
+  label: `£8 per 30 minutes. ${eveningBankHolidaysSpiel}`
 }, {
   image: imageCats,
   title: 'Cat sitting ',
