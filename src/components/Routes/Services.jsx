@@ -25,21 +25,22 @@ const copy = `
 ### However, I also provide secondary services alongside this including garden breaks, pet taxi, cat sitting, small pet care and puppy socialisation time.
 `;
 
-const eveningBankHolidaysSpiel = 'Evening (after 5pm) weekend and bank holiday walks are charged a rate of time & a half.';
+const eveningBankHolidaysWalkSpiel = 'Evening (after 5pm) weekend and bank holiday walks are charged a rate of time & a half.';
+const eveningBankHolidaysSpiel = 'Evening (after 5pm) weekend and bank holidays are charged a rate of time & a half.';
 
 const sections = [{
   image: imageRunning,
   title: '30 minute walk',
   details: '30 minutes’ walk either by themselves or as a group. Rural locations and local parks. Towel dried on return',
   tag: 'Text update provided.',
-  label: `30 minutes £8, £4 per additional dog, 1-2-1 dog walking £12. ${eveningBankHolidaysSpiel}`
+  label: `30 minutes £8, £4 per additional dog, 1-2-1 dog walking £12. ${eveningBankHolidaysWalkSpiel}`
 
 }, {
   image: imageFletcherWalk,
   title: '60 minutes walk',
   details: '60 minutes’ walk either by themselves or as a group. Rural locations and local parks. Towel dried on return',
   tag: 'Text update provided.',
-  label: `60 minutes £10, £5 per additional dog, 1-2-1 dog walking £15. ${eveningBankHolidaysSpiel}`
+  label: `60 minutes £10, £5 per additional dog, 1-2-1 dog walking £15. ${eveningBankHolidaysWalkSpiel}`
 }, {
   image: imageGardenBreak,
   title: 'Garden break',
