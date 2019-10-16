@@ -23,11 +23,11 @@ const columnsCopy = [`
 # ${site.strap}
 ## ${site.description}
 `, `
-For most people who own a dog or small pet, having someone look after them while away proves to be a major problem. This includes work, holidays or other long distance commitments. 
+For most people who own a dog or small pet, having someone look after them while away proves to be a major problem. This includes work, holidays or other commitments. 
 
 >Simply, who can take care of their dog, cat or small pet while the owner is away? 
 `, `
-**${site.name}** primarily focuses on providing dog walks and day care. However, I also provide secondary services alongside this including garden breaks, pet taxi, cat sitting, small pet care and puppy socialisation time.
+**${site.name}** primarily focuses on providing dog walks. However, I also provide secondary services alongside this including garden breaks, pet taxi, cat sitting, small pet care and puppy socialisation time.
 `];
 
 function Home() {

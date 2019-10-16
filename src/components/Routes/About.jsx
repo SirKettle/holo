@@ -43,7 +43,6 @@ _A very young Claire!_
 ### What is ${site.name}?
 - Regular or occasional dog walking
 - Small pet care
-- Dog day care
 - Garden breaks
 - Pet taxi
 - Puppy socialisation
