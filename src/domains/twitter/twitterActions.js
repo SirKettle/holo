@@ -25,7 +25,7 @@ export function loadTweets(dispatch) {
     return null;
   }
 
-  return fetch(`http://api.thekettlestudio.co.uk/api/tweets.php?count=7&user=${twitterUserId}`, {
+  return fetch(`http://sirkettle.kozow.com:3001/twitter/legacy-tweets/${twitterUserId}?count=7`, {
     method: 'GET'
   }).then((response) => {
     return response.json();
