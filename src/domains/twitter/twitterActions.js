@@ -25,7 +25,7 @@ export function loadTweets(dispatch) {
     return null;
   }
 
-  return fetch(`http://sirkettle.kozow.com:3001/twitter/legacy-tweets/${twitterUserId}?count=7`, {
+  return fetch(`http://sirkettle.kozow.com:3001/twitter/tweets/${twitterUserId}?count=7&retweets=true`, {
     method: 'GET'
   }).then((response) => {
     return response.json();
