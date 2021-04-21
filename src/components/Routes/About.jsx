@@ -6,8 +6,8 @@ import Content from '../Content/Content';
 import Columns from '../Columns/Columns';
 import imageDogKiss from '../../assets/images/claire_square_dog_kiss.jpg';
 import heroImage from '../../assets/images/slides/claire_field_1.jpg';
+import imageKids from '../../assets/images/kidsbench.jpeg';
 import imageDoraClaire from '../../assets/images/claire_dora.jpg';
-import imageHeads from '../../assets/images/heads.jpg';
 import imageVan from '../../assets/images/van.jpg';
 import logoAnimals from '../../assets/images/logo-animals_924x824.png';
 import * as site from '../../constants/site';
@@ -18,7 +18,7 @@ const columnsCopy = [`
 `, `
 ### Who is ${site.name}?
 
-![Claire Buckels with Alfie and Dora](${imageHeads})
+![Claire Buckels family](${imageKids})
 
 #### Claire Buckels:
 - Partner and Mum of 2.

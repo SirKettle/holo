@@ -6,6 +6,10 @@ import Content from '../Content/Content';
 import Columns from '../Columns/Columns';
 import * as site from '../../constants/site';
 import styles from './styles.css';
+import imageKidsBench2 from '../../assets/images/slides/kidsbench2.jpeg';
+import imageBrownDog from '../../assets/images/slides/browndog.jpeg';
+import imageLick from '../../assets/images/slides/lick.jpeg';
+import imageSit from '../../assets/images/slides/sit.jpeg';
 import imageClaireField1 from '../../assets/images/slides/claire_field_1.jpg';
 import imageClaireField2 from '../../assets/images/slides/claire_field_2.jpg';
 import imageClaireField3 from '../../assets/images/slides/claire_field_3.jpg';
@@ -35,6 +39,7 @@ function Home() {
     <Layout
       className={styles.layout}
       slideShowImages={[
+        imageKidsBench2, imageBrownDog, imageLick, imageSit,
         imageRunning, imageBigTongue, imageClaireField1,
         imageDaneKiss, imageGrassJump, imageClaireField3,
         imagePussy, imageHattie, imageClaireField2,

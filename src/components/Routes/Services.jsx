@@ -40,7 +40,7 @@ const sections = [{
   image: imageDogTreats,
   title: '60 minutes walk',
   details: '60 minutes’ walk either by themselves or as a group. Rural locations and local parks. Towel dried on return',
-  label: `60 minutes £10, £5 per additional dog, 1-2-1 dog walking £15. ${eveningBankHolidaysWalkSpiel}`
+  label: `60 minutes £11, £5 per additional dog, 1-2-1 dog walking £15. ${eveningBankHolidaysWalkSpiel}`
 }, {
   image: imageDogFaces,
   title: 'Garden break',
