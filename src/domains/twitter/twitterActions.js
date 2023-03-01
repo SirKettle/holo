@@ -25,7 +25,7 @@ export function loadTweets(dispatch) {
     return null;
   }
 
-  return fetch(`https://sirkettle.kozow.com/twitter/tweets/${twitterUserId}?count=15`, {
+  return fetch(`https://sirkettle.herokuapp.com/twitter/tweets/${twitterUserId}?count=15`, {
     method: 'GET'
   }).then((response) => {
     return response.json();

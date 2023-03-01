@@ -7,15 +7,16 @@ import * as site from '../../constants/site';
 // import * as site from '../../constants/site';
 import imageClaireMountain from '../../assets/images/slides/claire_mountain.jpg';
 import imageRabbit from '../../assets/images/services/rabbit-hutch.jpg';
+import imageSit from '../../assets/images/slides/sit.jpeg';
 // import imageBlackDog from '../../assets/images/services/dogdaycare.jpg';
 // import imageFletcherWalk from '../../assets/images/services/outdoorssunshinewalk.jpg';
 import imageDogTreats from '../../assets/images/services/dog_treats.jpg';
 import imageDogFaces from '../../assets/images/services/dogfaces.jpg';
 // import imageFletcherWalk from '../../assets/images/services/walk_fletcher.jpg';
 // import imageWalkBeagles from '../../assets/images/services/walk_beagles.jpg';
-import imageRunning from '../../assets/images/services/running.jpg';
+import imageGiant from '../../assets/images/services/giant.jpg';
 // import imageGardenBreak from '../../assets/images/services/garden_break.jpg';
-import imagePuppy from '../../assets/images/services/puppy2.jpg';
+import imagePuppy from '../../assets/images/services/instapuppy.jpg';
 import imagePetTaxi from '../../assets/images/services/pettaxi.jpg';
 import imageCats from '../../assets/images/services/cats.jpg';
 
@@ -24,48 +25,48 @@ const copy = `
 
 ## ${site.name} primarily focuses on providing dog walks.
 
-### However, I also provide secondary services alongside this including garden breaks, pet taxi, cat sitting, small pet care and puppy socialisation time.
+### However, we also provide secondary services alongside this including garden breaks, pet taxi, cat sitting, small pet care and puppy socialisation time.
 `;
 
 const eveningBankHolidaysWalkSpiel = 'Evening (after 5pm) weekend and bank holiday walks are charged a rate of time & a half.';
 const eveningBankHolidaysSpiel = 'Evening (after 5pm) weekend and bank holidays are charged a rate of time & a half.';
 
 const sections = [{
-  image: imageRunning,
+  image: imageSit,
   title: '30 minute walk',
   details: '30 minutes’ walk either by themselves or as a group. Rural locations and local parks. Towel dried on return',
-  label: `30 minutes £8, £4 per additional dog, 1-2-1 dog walking £12. ${eveningBankHolidaysWalkSpiel}`
+  label: `£9, £5 per additional dog from the same household. Solo £14. ${eveningBankHolidaysWalkSpiel}`
 
 }, {
   image: imageDogTreats,
   title: '60 minutes walk',
   details: '60 minutes’ walk either by themselves or as a group. Rural locations and local parks. Towel dried on return',
-  label: `60 minutes £11, £5 per additional dog, 1-2-1 dog walking £15. ${eveningBankHolidaysWalkSpiel}`
+  label: `£12, £7 per additional dog from the same household. Solo £19. ${eveningBankHolidaysWalkSpiel}`
 }, {
-  image: imageDogFaces,
+  image: imageGiant,
   title: 'Garden break',
   details: 'For dogs who for some reason don’t need walking but just need a garden break and a little company ',
-  label: `30 minutes £8. ${eveningBankHolidaysSpiel}`
-}, {
-  image: imagePetTaxi,
-  title: 'Pet taxi',
-  details: 'I’ll transport your pet to the vet or to any other destination for you and save you the anxieties ',
-  label: `Duration varies £8 per 30 minutes. ${eveningBankHolidaysSpiel}`
+  label: `15 mins £7 or £12 for two daily visits. ${eveningBankHolidaysSpiel}`
 }, {
   image: imagePuppy,
-  title: 'Puppy socialisation time',
-  details: 'Having studied canine behaviour, I understand the importance of socialisation from a young age and the impact the lack of it can have on a dogs future behaviour. If you’re too busy, I can introduce them to everyday stimuli. Traffic, dog groups, children etc and work on basic training',
-  label: `£8 per 30 minutes. ${eveningBankHolidaysSpiel}`
-}, {
-  image: imageCats,
-  title: 'Cat sitting ',
-  details: 'I will visit your cat whilst you’re at work or away on holiday, avoiding the need for a cattery.  I provide lots of love and cuddles, feed, water and clean litter trays',
-  label: '15 minutes £6, £10 for two daily visits'
+  title: 'Puppy visits',
+  details: 'Having studied canine behaviour, We understand the importance of socialisation from a young age and the impact the lack of it can have on a dogs future behaviour. If you’re too busy, we can introduce them to everyday stimuli. Traffic, dog groups, children etc and work on basic training',
+  label: `15 mins £7 or £12 for two daily visits. ${eveningBankHolidaysSpiel}`
 }, {
   image: imageRabbit,
   title: 'Small pet care',
-  details: 'I will feed and water your animal, play and clean cages/bedding. All animals catered for, big or small',
-  label: '15 minutes £6, £10 for two daily visits'
+  details: 'We will feed and water your animal, play and clean cages/bedding. All animals catered for, big or small',
+  label: `15 minutes £7, £12 for two daily visits. ${eveningBankHolidaysSpiel}`
+}, {
+  image: imageCats,
+  title: 'Cat sitting ',
+  details: 'We will visit your cat whilst you’re at work or away on holiday, avoiding the need for a cattery.  We provide lots of love and cuddles, feed, water and clean litter trays',
+  label: `15 minutes £7, £12 for two daily visits. ${eveningBankHolidaysSpiel}`
+}, {
+  image: imagePetTaxi,
+  title: 'Pet taxi',
+  details: 'We’ll transport your pet to the vet or to any other destination for you and save you the anxieties ',
+  label: `£14 per 30 minutes. ${eveningBankHolidaysSpiel}`
 }];
 
 function Services() {

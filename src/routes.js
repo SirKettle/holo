@@ -4,13 +4,12 @@ import { reduce, pick } from 'ramda';
 import Home from './components/Routes/Home';
 import About from './components/Routes/About';
 import Services from './components/Routes/Services';
-import Testimonials from './components/Routes/Testimonials';
+// import Testimonials from './components/Routes/Testimonials';
 
 export const ROUTES = {
   ROOT: { name: '__root__', path: '/', component: Home, label: 'Home', inNav: true },
   ABOUT: { name: 'about', path: '/about', component: About, label: 'About', inNav: true },
-  SERVICES: { name: 'services', path: '/services', component: Services, label: 'Services', inNav: true },
-  TESTIMONIALS: { name: 'testimonials', path: '/testimonials', component: Testimonials, label: 'Testimonials', inNav: true }
+  SERVICES: { name: 'services', path: '/services', component: Services, label: 'Services', inNav: true }
 };
 
 const composeLink = route => pick(['name', 'label'], route);

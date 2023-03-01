@@ -6,8 +6,9 @@ import styles from './Footer.css';
 import * as site from '../../constants/site';
 import logoDbs from '../../assets/images/dbs.png';
 import logoBccs from '../../assets/images/bccs.jpg';
-import logoFirstaid from '../../assets/images/firstaid.jpg';
+import logoFirstaid from '../../assets/images/petfirstaid.jpg';
 import logoCliverton from '../../assets/images/cliverton.jpg';
+import logoProtectivity from '../../assets/images/protectivity.jpg';
 import findUsOnFacebookLogo from '../../assets/FB-FindUsonFacebook-online-512.png';
 import instagramLogo from '../../assets/IG_Glyph_Fill.jpg';
 import twitterLogo from '../../assets/Twitter_Logo_Blue.jpg';
@@ -40,7 +41,7 @@ const Footer = ({
     <div className={classnames(styles.logos, className)}>
       <div className={styles.logo} style={{ backgroundImage: `url(${logoBccs})` }} />
       <div className={styles.logo} style={{ backgroundImage: `url(${logoDbs})` }} />
-      <div className={styles.logo} style={{ backgroundImage: `url(${logoCliverton})` }} />
+      <div className={styles.logo} style={{ backgroundImage: `url(${logoProtectivity})` }} />
       <div className={styles.logo} style={{ backgroundImage: `url(${logoFirstaid})` }} />
     </div>
     <div className={classnames(styles.legal, className)}>

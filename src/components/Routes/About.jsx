@@ -16,31 +16,34 @@ import Blog from '../Blog/Blog';
 const columnsCopy = [`
 # About ${site.name}...
 `, `
-### Who is ${site.name}?
+### Who are ${site.name}?
 
 ![Claire Buckels family](${imageKids})
 
-#### Claire Buckels:
-- Partner and Mum of 2.
-- Trustee and Fundraising Officer for The Beagle Welfare Charity (2014-18)
-- The Beagle Welfare Charity, Area Officer for Nottingham for 10 years
-- Passionate pet owner
-- Experienced dog walker
-- Canine behaviourist BCCSDip.AdvCanBhv
+#### Claire
+Mum of two, Claire is an experienced dog walker and pet owner. She has been Area Officer of Nottingham for The Beagle Welfare Charity since 2008, and was also Trustee and Fundraising Officer (2014-18).
+
+Claire (BCCSDip.AdvCanBhv) is a trained Canine Behaviourist and has an Advanced Canine Behaviour Diploma awarded by the [British College of Canine Studies](https://www.britishcollegeofcaninestudies.com/).
 
 ![Claire Buckels with Dora](${imageDoraClaire})
 _A very young Claire!_
+
+#### Victoria
+They say you should never work with children or animals, we don’t agree! Victoria’s love for animals prompted a change of career from teacher to dog walker.
+
+Dog mum to Sherlock and crazy about cockers...
 
 ### Why choose ${site.name}?
 - DBS checked
 - Canine first aid trained
 - Fully insured
-- I hold a level 4 accredited advanced diploma in canine behaviour
-- VW van fitted with automatic temperature control extraction to the rear and four bespoke, key lockable [Alpha Dog Cages](http://alphadogcages.co.uk) to provide cool, safe and secure transport
+- We hold various qualifications between us, including level 4 advanced diplomas in canine behaviour and canine law
+- Vans fitted with automatic temperature control extraction to the rear and bespoke, key lockable crates to provide cool, safe and secure transport
 
 ![The van](${imageVan})
 
 ### What is ${site.name}?
+- Established in 2018
 - Regular or occasional dog walking
 - Small pet care
 - Garden breaks
@@ -50,11 +53,10 @@ _A very young Claire!_
 ![A dog kiss](${imageDogKiss})
 _Claire with one of her pet dogs, Alfie._
 
-### The brand holo-holo
-- Hawaiian word, literally translating to ‘going for a walk/to go out for pleasure’
-- When someone is going holo-holo, they’re adventuring for fun. It’s kind of like a journey without a destination
-- My favourite thing to do, namesake and inspiration
-- Memories of Hawaii incorporated with my love and passion for animal welfare
+### The brand ${site.name}
+Many moons ago Claire, the founder of holo-holo spent some transformational time in Hawaii. She was inspired by the way of life, the love for the outdoors and combined this with her passion for animals and their welfare. holo-holo is a Hawaiian term which means ‘going for a walk/adventure/to go out for pleasure’.
+
+We love taking our customers dogs, on a daily holo-holo. It’s not just a walk, it’s a mindset. 🐾
 
 ![${site.name} animals](${logoAnimals})
 
