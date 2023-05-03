@@ -10,16 +10,18 @@ import imageBrownDog from '../../assets/images/slides/browndog.jpeg';
 import imageLick from '../../assets/images/slides/lick.jpeg';
 import imageClaireField1 from '../../assets/images/slides/claire_field_1.jpg';
 import imageClaireField2 from '../../assets/images/slides/claire_field_2.jpg';
-import imageClaireField3 from '../../assets/images/slides/claire_field_3.jpg';
+// import imageClaireField3 from '../../assets/images/slides/claire_field_3.jpg';
 import imageHattie from '../../assets/images/slides/hattiefield.jpg';
 import imagePussy from '../../assets/images/slides/pussy.jpg';
 import imageRunning from '../../assets/images/slides/running.jpg';
-import imageSummer from '../../assets/images/slides/summer.jpg';
+import imageTummyRub from '../../assets/images/slides/tummy_rub.jpg';
+import imageBench from '../../assets/images/slides/bench.jpg';
+// import imageSummer from '../../assets/images/slides/summer.jpg';
 import imageClaireMountain from '../../assets/images/slides/claire_mountain.jpg';
-import imageBeagleWalk from '../../assets/images/slides/beagles-walking.jpg';
+// import imageBeagleWalk from '../../assets/images/slides/beagles-walking.jpg';
 import imageGrassJump from '../../assets/images/slides/grass_jump.jpg';
 import imageDaneKiss from '../../assets/images/slides/dane_kiss.jpg';
-import imageBigTongue from '../../assets/images/slides/big_tongue.jpg';
+// import imageBigTongue from '../../assets/images/slides/big_tongue.jpg';
 
 const columnsCopy = [`
 # ${site.strap}
@@ -37,11 +39,12 @@ function Home() {
     <Layout
       className={styles.layout}
       slideShowImages={[
-        imageBrownDog, imageLick,
-        imageRunning, imageBigTongue, imageClaireField1,
-        imageDaneKiss, imageGrassJump, imageClaireField3,
+        imageLick, imageBench,
+        imageBrownDog, imageTummyRub,
+        imageRunning, imageClaireField1,
+        imageDaneKiss, imageGrassJump,
         imagePussy, imageHattie, imageClaireField2,
-        imageSummer, imageClaireMountain, imageBeagleWalk
+        imageClaireMountain
       ]}
       heroCopy={columnsCopy[0]}
     >

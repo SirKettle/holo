@@ -5,7 +5,7 @@ import Layout from '../Layout/Layout';
 import Sections from '../Sections/Sections';
 import * as site from '../../constants/site';
 // import * as site from '../../constants/site';
-import imageClaireMountain from '../../assets/images/slides/claire_mountain.jpg';
+import imageClaireMountain from '../../assets/images/slides/streamcrop.jpg';
 import imageRabbit from '../../assets/images/services/rabbit-hutch.jpg';
 import imageSit from '../../assets/images/slides/sit.jpeg';
 // import imageBlackDog from '../../assets/images/services/dogdaycare.jpg';

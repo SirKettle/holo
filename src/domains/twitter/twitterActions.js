@@ -25,7 +25,10 @@ export function loadTweets(dispatch) {
     return null;
   }
 
-  return fetch(`https://sirkettle.herokuapp.com/twitter/tweets/${twitterUserId}?count=15`, {
+  // const tumblrUserId = 'sirkettle';
+  // return fetch(`https://sirkettle.herokuapp.com/twitter/tweets/${twitterUserId}?count=15`, {
+  // return fetch(`https://sirkettle.herokuapp.com/blog/posts-and-tweets?count=15&twitter_id=${twitterUserId}&tumblr_id=${tumblrUserId}`, {
+  return fetch(`https://sirkettle.herokuapp.com/blog/posts-and-tweets?count=15&twitter_id=${twitterUserId}`, {
     method: 'GET'
   }).then((response) => {
     return response.json();
