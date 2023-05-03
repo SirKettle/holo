@@ -18,6 +18,7 @@ const columnsCopy = [`
 `, `
 ### Who are ${site.name}?
 
+
 ![Claire Buckels family](${imageKids})
 
 #### Claire
