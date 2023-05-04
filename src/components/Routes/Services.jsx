@@ -19,6 +19,7 @@ import imageGiant from '../../assets/images/services/giant.jpg';
 import imagePuppy from '../../assets/images/services/instapuppy.jpg';
 import imagePetTaxi from '../../assets/images/services/pettaxi.jpg';
 import imageCats from '../../assets/images/services/cats.jpg';
+import imageVickyWalk from '../../assets/images/services/vic_walk.jpg';
 
 const copy = `
 # Services
@@ -38,7 +39,7 @@ const sections = [{
   label: `£9, £5 per additional dog from the same household. Solo £14. ${eveningBankHolidaysWalkSpiel}`
 
 }, {
-  image: imageDogTreats,
+  image: imageVickyWalk,
   title: '60 minutes walk',
   details: '60 minutes’ walk either by themselves or as a group. Rural locations and local parks. Towel dried on return',
   label: `£12, £7 per additional dog from the same household. Solo £19. ${eveningBankHolidaysWalkSpiel}`

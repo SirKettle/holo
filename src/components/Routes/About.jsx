@@ -13,7 +13,7 @@ import imageKids from '../../assets/images/kidsbench.jpeg';
 import imageVan from '../../assets/images/slides/vans.jpg';
 import logoAnimals from '../../assets/images/logo-animals_924x824.png';
 import * as site from '../../constants/site';
-import Blog from '../Blog/Blog';
+// import Blog from '../Blog/Blog';
 
 const columnsCopy = [`
 # About ${site.name}...
@@ -23,7 +23,9 @@ const columnsCopy = [`
 ![A dog kiss](${imageDogKiss})
 
 #### Claire
-Mum of two, Claire is an experienced dog walker and pet owner. She has been Area Officer of Nottingham for The Beagle Welfare Charity since 2008, and was also Trustee and Fundraising Officer (2014-18).
+Mum of two, Claire is an experienced dog walker and beagle owner. She has been Area Officer of Nottingham for The Beagle Welfare Charity since 2008, and was also Trustee and Fundraising Officer (2014-18).
+
+![Claire Buckels family](${imageKids})
 
 Claire (BCCSDip.AdvCanBhv) is a trained Canine Behaviourist and has an Advanced Canine Behaviour Diploma awarded by the [British College of Canine Studies](https://www.britishcollegeofcaninestudies.com/).
 
@@ -33,7 +35,7 @@ Claire (BCCSDip.AdvCanBhv) is a trained Canine Behaviourist and has an Advanced 
 They say you should never work with children or animals, we don’t agree! Victoria’s love for animals prompted a change of career from teacher to dog walker.
 
 Dog mum to Sherlock and crazy about cockers...
-
+`, `
 ### Why choose ${site.name}?
 - DBS checked
 - Canine first aid trained
@@ -51,15 +53,12 @@ Dog mum to Sherlock and crazy about cockers...
 - Pet taxi
 - Puppy socialisation
 
-![Claire Buckels family](${imageKids})
-
 ### The brand ${site.name}
 Many moons ago Claire, the founder of holo-holo spent some transformational time in Hawaii. She was inspired by the way of life, the love for the outdoors and combined this with her passion for animals and their welfare. holo-holo is a Hawaiian term which means ‘going for a walk/adventure/to go out for pleasure’.
 
 We love taking our customers dogs, on a daily holo-holo. It’s not just a walk, it’s a mindset. 🐾
 
 ![${site.name} animals](${logoAnimals})
-
 `];
 
 function About() {
@@ -70,10 +69,7 @@ function About() {
     >
       <Columns>
         <Content markdown={columnsCopy[1]} />
-        <Blog
-          loadingContent={'### What have I been up to...?'}
-          preContent={'### This is what I’ve been up to'}
-        />
+        <Content markdown={columnsCopy[2]} />
       </Columns>
     </Layout>
   );

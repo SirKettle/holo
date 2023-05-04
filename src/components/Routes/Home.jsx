@@ -19,7 +19,8 @@ import imageBench from '../../assets/images/slides/bench.jpg';
 // import imageSummer from '../../assets/images/slides/summer.jpg';
 import imageClaireMountain from '../../assets/images/slides/claire_mountain.jpg';
 // import imageBeagleWalk from '../../assets/images/slides/beagles-walking.jpg';
-import imageGrassJump from '../../assets/images/slides/grass_jump.jpg';
+// import imageGrassJump from '../../assets/images/slides/grass_jump.jpg';
+import imageGang from '../../assets/images/slides/gang.jpg';
 import imageDaneKiss from '../../assets/images/slides/dane_kiss.jpg';
 // import imageBigTongue from '../../assets/images/slides/big_tongue.jpg';
 
@@ -42,7 +43,7 @@ function Home() {
         imageLick, imageBench,
         imageBrownDog, imageTummyRub,
         imageRunning, imageClaireField1,
-        imageDaneKiss, imageGrassJump,
+        imageDaneKiss, imageGang,
         imagePussy, imageHattie, imageClaireField2,
         imageClaireMountain
       ]}
